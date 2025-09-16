@@ -47,6 +47,7 @@ header {
     width: 100%;
     z-index: var(--z-modal);
     box-shadow: 0 0 4px var(--color-sombras);
+    padding: 0.5em 0;
 }
 
 .menu {
@@ -117,7 +118,7 @@ header {
 /* INICIO DE BANNER */
 .main-banner {
     position: relative;
-    top: 45px;
+    top: 64px;
     padding: 12em 12em;
     background: linear-gradient(to right, #eea11c, #41ca3e);
 }
@@ -339,6 +340,7 @@ BOTON EXPLORAR
 /* INICIO DE FOOTER */
 .main-footer {
     background-color: var(--color-primario);
+    padding: 2em 10em;
 }
 
 .footer-grid {
@@ -348,8 +350,7 @@ BOTON EXPLORAR
 }
 
 .footer-img img{
-    width: 100%;
-    border-radius: .4em .4em 0 0;
+    padding: 1em;
 }
 
 .footer-content {
@@ -392,7 +393,7 @@ BOTON EXPLORAR
 
 @media screen and (max-width: 1024px) {
     .main-footer {
-        padding: 1em 3em;
+        padding: 2em 3em;
     }    
     .footer-titulo {
         font-size: 1.2em;
@@ -406,6 +407,9 @@ BOTON EXPLORAR
     .footer-content {
         text-align: center;
     }
+    .footer-img {
+        text-align: center;
+    }
     .redes-grid {
         align-self: center;
     }
@@ -413,7 +417,6 @@ BOTON EXPLORAR
 
 .derechos {
     padding-top: 2em;
-    padding-bottom: 2em;
 }
 
 .derechos h1{
