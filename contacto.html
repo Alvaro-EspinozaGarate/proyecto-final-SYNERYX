@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Nosotros</title>
+		<!-- FAVICON - ICONO EN EL NAVEGADOR -->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+		<!-- BOOTSTRAP -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+
+		<!-- FONTAWESOME - LIBRERIA DE ÍCONOS -->
+		<script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+
+		<!-- LIBRERÍA DE FUENTES - GOOGLE FONTS -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- HOJA DE ESTILOS -->
+		<link rel="stylesheet" href="css/styles.css" />
+
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<!-- INICIO DE WHATSAPP -->
+		<a href="https://wa.link/mfwx3x" target="_blank" class="boton-whatsapp"
+			><i class="fa-brands fa-whatsapp"></i
+		></a>
+		<!-- FIN DE WHATSAPP -->
+
+		<!-- INICIO DE MENÚ DE NAVEGACIÓN -->
+		<header id="header">
+			<nav class="menu">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/isologo.svg" alt="" class="img-fluid img-logo" />
+					</a>
+					<a href="#" class="btn-menu" id="btn-menu">
+						<i class="fa-solid fa-bars icono-menu"></i>
+					</a>
+				</div>
+				<div class="enlaces" id="enlaces">
+					<a href="index.html">INICIO</a>
+					<a href="nosotros.html">CONÓCENOS</a>
+					<a href="servicios.html">SERVICIOS</a>
+					<a href="contacto.html">CONTACTO</a>
+					<a href="#">PROYECTOS</a>
+				</div>
+			</nav>
+		</header>
+		<!-- FIN DE MENÚ DE NAVEGACIÓN -->
+
+
+		<!-- INICIO DE CONTACTO -->
+		<article class="container section-contacto" id="contacto">
+			<h2 class="contacto-titulo">Contáctanos</h2>
+			<form action="enviar.js" method="get">
+				<section class="row">
+					<section class="col-xs-12 col-sm-6 col-md-6 contacto">
+						<h1>Conéctate con SINERYX</h1>
+						<h2>Nuestro equipo está listo para ayudarte a llevar tu tecnología al siguiente nivel.</h2>
+						<section class="contacto-flex">
+							<a href="mailto:correoempresa@sineryx.pe" target="_blank"><i class="fa-solid fa-envelope"></i> correoempresa@sineryx.pe</a>
+							<a href="tel:+51123456789" target="_blank"><i class="fa-solid fa-phone"></i> +51 123-456-789</a>
+						</section>
+					</section>
+	
+					<section class="col-xs-12 col-sm-6 col-md-6 contacto">
+						<input class="contacto-input" type="text" placeholder="Ingrese su nombre" required>
+						<input class="contacto-input" type="email" placeholder="Ingrese su correo electrónico" required>
+						<textarea placeholder="Ingrese su mensaje" required class="contacto-input"></textarea>
+						<label><input type="checkbox"> Acepto los términos y condiciones</label>
+						<input class="contacto-input boton-contacto" type="submit" value="Enviar">
+					</section>
+				</section>
+			</form>
+		</article>
+		<!-- FIN DE CONTACTO -->    
+
+		 <!-- INICIO DE FOOTER -->
+		 <footer class="main-footer">
+			<article class="footer-grid">
+				<section class="footer-data">
+					<section class="footer-img">
+						<img src="img/isologo.svg" alt="" class="img-fluid">
+					</section>
+				</section>
+				<section class="footer-data">
+					<section class="footer-content">
+						<h1 class="footer-titulo">Explora más</h1>
+						<a href="#" class="footer-enlace">Sobre nosotros</a>
+						<a href="#" class="footer-enlace">Servicios</a>
+						<a href="#" class="footer-enlace">Proyectos</a>
+						<a href="#" class="footer-enlace">Política de privacidad</a>
+						<a href="#" class="footer-enlace">Contáctanos</a>
+					</section>
+				</section>
+				<section class="footer-data">
+					<section class="footer-content">
+						<h1 class="footer-titulo">Servicios</h1>
+						<a href="#" class="footer-enlace">Desarrollo de Software</a>
+						<a href="#" class="footer-enlace">Automatización & RPA</a>
+						<a href="#" class="footer-enlace">Inteligencia Artificial</a>
+					</section>
+				</section>
+				<section class="footer-data">
+					<section class="footer-content">
+						<h1 class="footer-titulo">Contáctanos</h1>
+						<a href="#" class="footer-enlace">Oficina Central: 123-456-789</a>
+						<a href="#" class="footer-enlace">Soporte Técnico: 123-456-789</a>
+					</section>
+				</section>
+				<section class="footer-data">
+					<section class="footer-content">
+						<h1 class="footer-titulo">Redes Sociales</h1>
+						<section class="redes-flex">
+							<a href="https://www.facebook.com" target="_blank" class="footer-redes"><i class="fa-brands fa-facebook-f"></i></a>
+							<a href="https://www.instagram.com/" target="_blank" class="footer-redes"><i class="fa-brands fa-instagram"></i></a> 
+							<a href="https://x.com/" target="_blank" class="footer-redes"><i class="fa-brands fa-x-twitter"></i></a> 
+							<a href="https://www.youtube.com/" target="_blank" class="footer-redes"><i class="fa-brands fa-youtube"></i></a>
+						</section>
+					</section>
+				</section>
+			</article>
+			<section class="derechos">
+				<h1>© 2025 Sineryx | Todos los derechos reservados</h1>
+			</section>
+		</footer>
+		<!-- FIN DE FOOTER -->
+
+	</body>
+</html>

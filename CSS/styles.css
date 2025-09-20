@@ -444,6 +444,9 @@ textarea {
 
 
 /* INICIO CONTACTO */
+.section-contacto{
+    margin-top: 120px;
+}
 .contacto-titulo {
     font-family: 'Montserrat';
     color: var(--color-titulos);
