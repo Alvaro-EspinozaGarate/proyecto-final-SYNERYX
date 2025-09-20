@@ -41,9 +41,9 @@
             </div>
             <div class="enlaces" id="enlaces">
                 <a href="index.html">INICIO</a>
-                <a href="#">CONÓCENOS</a>
+                <a href="nosotros.html">CONÓCENOS</a>
                 <a href="servicios.html">SERVICIOS</a>
-                <a href="#contacto">CONTACTO</a>
+                <a href="contacto.html">CONTACTO</a>
                 <a href="#">PROYECTOS</a>
             </div>
         </nav>
@@ -64,26 +64,105 @@
     <br><br><br><br>
     <!-- FIN DE MENÚ DE NAVEGACIÓN -->
 
-    <!-- INICIO DE NOSOTROS -->
-    <!-- FIN DE NOSOTROS -->
+    <!-- INICIO DE SECCIÓN DE NOSOTROS -->
+		<section class="container">
+			<section class="container main-section">
+				<h2 class="nosotros-titulo">Sobre Nosotros</h2>
+				<hr />
+				<section class="row">
+					<section class="col-xs-12 col-sm-12 col-lg-6">
+						<img src="img/img-nosotros.png" alt="nosotros" class="img-fluid imagen" />
+					</section>
+					<section class="col-xs-12 col-sm-12 col-lg-6">
+						<p class="nosotros-parrafo">
+							Somos una fábrica de software especializada en soluciones digitales, 
+							automatización, inteligencia artificial y transformación tecnológica, 
+							orientada a múltiples sectores como salud, finanzas, telecomunicaciones, 
+							educación y retail. Nuestro enfoque es diseñar, desarrollar e implementar 
+							plataformas que generen valor real en la operación y estrategia de 
+							nuestros clientes.
+						</p>
 
-    <!-- INICIO DE SERVICIOS -->
-     <article class="container" id="servicios">
-        <h1 class="servicios-titulo">SERVICIOS</h1>
-        <section class="servicios">
-            <img src="img/fondo-servicios.png" alt="" class="servicios-img">            
-            <h1>Nuestros Servicios</h1>
-            <h2>Conoce cómo impulsamos tu negocio con tecnología: desarrollo web, ERP, automatización y más.</h2>
-            <div class="contenedor-conoce">
-                <a href="servicios.html" class="btn-servicios">Conoce aquí</a>
-            </div>
-        </section>
-    </article>
-    <!-- FIN DE SERVICIOS -->
+						<a href="nosotros.html" class="btn-primary">Saber más</a>
+
+						<!-- INDICADORES ESTADÍSTICOS -->
+						<section class="estadisticas-section">
+							<div class="estadistica-item">
+								<div class="estadistica-numero">+50</div>
+								<div class="estadistica-texto">
+									Proyectos <br />
+									implementados
+								</div>
+							</div>
+
+							<div class="estadistica-item">
+								<div class="estadistica-numero">+25</div>
+								<div class="estadistica-texto">
+									Clientes <br />
+									beneficiarios
+								</div>
+							</div>
+
+							<div class="estadistica-item">
+								<div class="estadistica-numero">+10</div>
+								<div class="estadistica-texto">
+									Años de <br />
+									experiencia
+								</div>
+							</div>
+						</section>
+					</section>
+				</section>
+			</section>
+		</section>
+		<!-- FIN DE SECCIÓN DE NOSOTROS -->
+
+        <!-- INICIO DE SECCIÓN DE SERVICIOS -->
+		<section class="container">
+			<article class="container main-section servicios">
+				<h2 class="servicios-titulo">Nuestros Servicios</h2>
+				<hr />
+				<article class="cards-services">
+					<section class="card-service">
+						<h3 class="card-title">
+							Desarrollo Web & <br />
+							Mobile
+						</h3>
+						<img src="img/home/desarrollo-web.png" class="img-fluid" alt="" />
+					</section>
+					<section class="card-service">
+						<h3 class="card-title">
+							Automatización & <br />
+							RPA
+						</h3>
+						<img src="img/home/automatizacion.png" class="img-fluid" alt="" />
+					</section>
+					<section class="card-service">
+						<h3 class="card-title">
+							Gestión <br />
+							de Proyectos
+						</h3>
+						<img src="img/home/consultoria.png" class="img-fluid" alt="" />
+					</section>
+					<section class="card-service">
+						<h3 class="card-title">
+							Implementación <br />
+							de ERP
+						</h3>
+						<img src="img/home/erp.png" class="img-fluid" alt="" />
+					</section>
+				</article>
+				<div class="centrado"> 
+					<a href="servicios.html" class="btn-primary">Ver más</a>
+				</div>
+			</article>
+		</section>
+
+	<!-- FIN DE SECCIÓN DE SERVICIOS -->
 
     <!-- INICIO DE CONTACTO -->
     <article class="container" id="contacto">
-        <h1 class="contacto-titulo">CONTACTO</h1>
+        <h2 class="contacto-titulo">Contáctanos</h2>
         <form action="enviar.js" method="get">
             <section class="row">
                 <section class="col-xs-12 col-sm-6 col-md-6 contacto">
@@ -98,7 +177,7 @@
                 <section class="col-xs-12 col-sm-6 col-md-6 contacto">
                     <input class="contacto-input" type="text" placeholder="Ingrese su nombre" required>
                     <input class="contacto-input" type="email" placeholder="Ingrese su correo electrónico" required>
-                    <textarea placeholder="Ingrese su mensaje" required></textarea>
+                    <textarea placeholder="Ingrese su mensaje" class="contacto-input" required></textarea>
                     <label><input type="checkbox"> Acepto los términos y condiciones</label>
                     <input class="contacto-input boton-contacto" type="submit" value="Enviar">
                 </section>
@@ -121,11 +200,11 @@
             <section class="footer-data">
                 <section class="footer-content">
                     <h1 class="footer-titulo">Explora más</h1>
-                    <a href="#" class="footer-enlace">Sobre nosotros</a>
-                    <a href="#" class="footer-enlace">Servicios</a>
+                    <a href="nosotros.html" class="footer-enlace">Sobre nosotros</a>
+                    <a href="servicios.html" class="footer-enlace">Servicios</a>
                     <a href="#" class="footer-enlace">Proyectos</a>
                     <a href="#" class="footer-enlace">Política de privacidad</a>
-                    <a href="#" class="footer-enlace">Contáctanos</a>
+                    <a href="contacto.html" class="footer-enlace">Contáctanos</a>
                 </section>
             </section>
             <section class="footer-data">

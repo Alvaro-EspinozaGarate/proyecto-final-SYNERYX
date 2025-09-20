@@ -221,89 +221,46 @@ textarea {
 
 /* FIN DE BANNER */
 
-<<<<<<< Updated upstream
-/* INICIO SERVICIOS */
-.servicios-titulo {
-=======
 /* SECCIÓN DE NOSOTROS */
 .main-section {
-    margin: 8em 0;
+    margin: 9em 0;
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
 .nosotros-titulo {
     color: var(--color-titulos);
->>>>>>> Stashed changes
     font-family: 'Montserrat';
-    color: var(--color-titulos);
     font-weight: 700;
+    text-align: center;
 }
-
-
-.servicios {
-    position: relative;
-    overflow: hidden;
-    padding: 2rem 1rem;
-    width: 100%;
-    height: 30em;
-    padding: 2em;
-    align-content: center;
-    text-align: center; 
-}
-
-.servicios-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.1;
-    z-index: var(--z-normal);
-}
-
-.servicios h1{
-    font-family: 'Montserrat';
-    color: var(--color-titulos);
-    font-weight: 700;
-    font-size: 3em;
-    position: relative;
-    z-index: var(--z-tooltip);
-}
-
-.servicios h2 {
+.nosotros-parrafo {
     font-family: 'Roboto';
     font-size: 1.5em;
     font-weight: 300;
-    position: relative;
-    z-index: var(--z-tooltip);
+    text-align: justify;
+    color: var(--color-parrafos);
 }
-
-.contenedor-conoce {
-    margin-top: 2em;
+.nosotros-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-.btn-servicios {
-    text-decoration: none;
+.btn-primary {
+    width: auto;
     background-color: var(--color-secundario);
     color: #fff;
     padding: .8em 2em;
     border-radius: .5em;
     font-family: 'Roboto';
     font-weight: 500;
-    position: relative;
-    z-index: var(--z-tooltip);
+    text-decoration: none;
 }
-
-.btn-servicios:hover {
+.btn-primary:hover {
     color: #fff;
     background-color: var(--color-primario);
     transition: background-color .5s ease-in-out;
 }
-<<<<<<< Updated upstream
-/* FIN SERVICIOS */
-=======
 
 /* INDICADORES ESTADÍSTICOS */
 .estadisticas-section {
@@ -422,6 +379,11 @@ textarea {
 
 /* Móviles (481px - 768px) */
 @media screen and (max-width: 768px) {
+    /* Sección Nosotros */
+    .main-nosotros {
+        margin-top: 4em;
+    }
+    
     .nosotros-titulo {
         font-size: 1.8em;
         margin-bottom: 1em;
@@ -480,25 +442,31 @@ textarea {
 
 /* FIN DE RESPONSIVE DESIGN */
 
->>>>>>> Stashed changes
 
 /* INICIO CONTACTO */
+.section-contacto{
+    margin-top: 120px;
+}
 .contacto-titulo {
     font-family: 'Montserrat';
     color: var(--color-titulos);
     font-weight: 700;
+    text-align: center;
 }
 
 .contacto {
-    align-self: center;
+    /* align-self: center; */
     padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .contacto h1{
     font-family: 'Montserrat';
     color: var(--color-titulos);
     font-weight: 700;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .contacto h2 {
@@ -546,6 +514,7 @@ textarea {
     font-weight: bold;
     padding: .4em;
     margin-top: .5em;
+    border-radius: .5em;
 }
 
 .boton-contacto:hover {
@@ -554,139 +523,6 @@ textarea {
 }
 
 /* FIN CONTACTO */
-
-
-/* .articulo {
-    margin-bottom: 7em;
-}
-
-.imagen {
-    border-radius: .5em;
-}
-
-.titulo-2 {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 1.5em;
-}
-
-.titulo-1 {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    color: var(--color-primario);
-    font-size: 1.6em;
-    letter-spacing: -1px;
-    margin-top: -.4em;
-    margin-bottom: 1em;
-}
-
-.parrafo {
-    font-family: 'Roboto';
-    color: var(--color-parrafos);
-    text-align: justify;
-    line-height: 1.5em;
-}
-
-.boton {
-    background-color: var(--color-primario);
-    color: #fff;
-    padding: 1em;
-    border-radius: .5em;
-    font-family: 'Roboto';
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.boton:hover {
-    color: #fff;
-    background-color: var(--color-secundario);
-    transition: background-color .5s ease-in-out;
-}
-
-.catalogo-titulo {
-    font-family: 'Roboto';
-    font-weight: 900;
-    text-align: center;
-    color: var(--color-titulos);
-}
-
-INICIO DE CARDS
-.cards-grid {
-    display: grid;
-    gap: 3em;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-}
-
-.card {
-    background-color: #fff;
-    border-radius: .4em;
-    box-shadow: 0 0 3px var(--color-sombras);
-    border: 1px solid var(--color-parrafos);
-}
-
-.card-img-beneficios img {
-    width: 100%;
-    border-radius: .4em;
-}
-
-.card-img img{
-    width: 100%;
-    border-radius: .4em .4em 0 0;
-}
-
-.card-content {
-    padding: 1.5em;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-title {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    text-align: center;
-    font-size: .95em;
-}
-
-.card-boton {
-    font-family: 'Roboto';
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--color-primario);
-    border-radius: .2em;
-    border: 1px solid var(--color-primario);
-    padding: .4em .6em;
-    text-align: center;
-}
-
-.card-boton:hover {
-    background-color: var(--color-primario);
-    color: #fff;
-    transition: background-color .4s ease-in-out;
-}
-FIN DE CARDS
-
-BOTON EXPLORAR
-.contenedor-explorar {
-    text-align: center;
-}
-.btn-explorar {
-    font-family: 'Roboto';
-    font-size: 1.1em;
-    font-weight: 800;
-    text-decoration: none;
-    color: var(--color-primario);
-    border-radius: .2em;
-    border: 1px solid var(--color-primario);
-    padding: 1.1em 2em;
-    text-align: center;
-}
-
-.btn-explorar:hover {
-    background-color: var(--color-primario);
-    color: #fff;
-    transition: background-color .4s ease-in-out;
-} */
-
 
 
 /* INICIO DE FOOTER */
