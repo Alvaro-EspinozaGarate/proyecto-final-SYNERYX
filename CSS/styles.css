@@ -128,7 +128,7 @@ textarea {
     min-height: 150px;
     max-height: 200px;
     border-radius: .2em;
-    background-color: #F4F4F6;
+    background-color: #fcfcfc;
     padding: .3em;
 }
 
@@ -228,9 +228,27 @@ textarea {
     font-weight: 700;
 }
 
+
 .servicios {
-    align-self: center;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem 1rem;
+    width: 100%;
+    height: 30em;
     padding: 2em;
+    align-content: center;
+    text-align: center; 
+}
+
+.servicios-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+    z-index: var(--z-normal);
 }
 
 .servicios h1{
@@ -238,45 +256,20 @@ textarea {
     color: var(--color-titulos);
     font-weight: 700;
     font-size: 3em;
+    position: relative;
+    z-index: var(--z-tooltip);
 }
 
 .servicios h2 {
     font-family: 'Roboto';
     font-size: 1.5em;
     font-weight: 300;
+    position: relative;
+    z-index: var(--z-tooltip);
 }
 
-.servicios p {
-    font-family: 'Roboto';
-    font-size: .8em;
-    color: var(--color-parrafos);
-}
-
-.servicios-flex {
-    display: flex;
-    gap: .3em 1.5em;
-    flex-wrap: wrap;
-}
-
-.servicios-flex a {
-    text-decoration: none;
-    color: var(--color-parrafos);
-    font-size: .9em;
-}
-
-.servicios-flex a:hover {
-    color: var(--color-secundario);
-    transition: color .2s ease-in-out;
-}
-
-.servicios-input {
-    width: 100%;
-    padding: .3em;
-    border: 1px solid var(--color-primario);
-    margin-bottom: 1.2em;
-    border-radius: .2em;
-    font-family: 'Roboto';
-    background-color: #F4F4F6;
+.contenedor-conoce {
+    margin-top: 2em;
 }
 
 .btn-servicios {
@@ -287,7 +280,8 @@ textarea {
     border-radius: .5em;
     font-family: 'Roboto';
     font-weight: 500;
-    
+    position: relative;
+    z-index: var(--z-tooltip);
 }
 
 .btn-servicios:hover {
@@ -352,7 +346,7 @@ textarea {
     margin-bottom: 1.2em;
     border-radius: .2em;
     font-family: 'Roboto';
-    background-color: #F4F4F6;
+    background-color: #fcfcfc;
 }
 
 .boton-contacto {
