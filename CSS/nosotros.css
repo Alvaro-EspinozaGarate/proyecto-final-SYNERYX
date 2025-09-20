@@ -183,7 +183,7 @@ header {
     font-family: 'Roboto';
     font-size: 1.2em;
     font-weight: 300;
-    color: var(--color-parrafos);
+    color: var(--color-enlaces);
 }
 
 .btn-banner {
