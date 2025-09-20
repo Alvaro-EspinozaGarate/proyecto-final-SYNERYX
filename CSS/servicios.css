@@ -120,7 +120,7 @@ header {
     position: relative;
     top: 64px;
     padding: 12em 12em;
-    background: linear-gradient(to right, #eea11c, #41ca3e);
+    background: linear-gradient(to right, #fda60e, #ffee02);
 }
 
 @media screen and (max-width: 1024px) {
