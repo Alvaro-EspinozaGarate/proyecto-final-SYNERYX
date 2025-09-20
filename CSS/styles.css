@@ -221,93 +221,249 @@ textarea {
 
 /* FIN DE BANNER */
 
-/* INICIO SERVICIOS */
-.servicios-titulo {
-    font-family: 'Montserrat';
+/* SECCIÓN DE NOSOTROS */
+.main-section {
+    margin: 9em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.nosotros-titulo {
     color: var(--color-titulos);
-    font-weight: 700;
-}
-
-
-.servicios {
-    position: relative;
-    overflow: hidden;
-    padding: 2rem 1rem;
-    width: 100%;
-    height: 30em;
-    padding: 2em;
-    align-content: center;
-    text-align: center; 
-}
-
-.servicios-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.1;
-    z-index: var(--z-normal);
-}
-
-.servicios h1{
     font-family: 'Montserrat';
-    color: var(--color-titulos);
     font-weight: 700;
-    font-size: 3em;
-    position: relative;
-    z-index: var(--z-tooltip);
+    text-align: center;
 }
-
-.servicios h2 {
+.nosotros-parrafo {
     font-family: 'Roboto';
     font-size: 1.5em;
     font-weight: 300;
-    position: relative;
-    z-index: var(--z-tooltip);
+    text-align: justify;
+    color: var(--color-parrafos);
 }
-
-.contenedor-conoce {
-    margin-top: 2em;
+.nosotros-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-.btn-servicios {
-    text-decoration: none;
+.btn-primary {
+    width: auto;
     background-color: var(--color-secundario);
     color: #fff;
     padding: .8em 2em;
     border-radius: .5em;
     font-family: 'Roboto';
     font-weight: 500;
-    position: relative;
-    z-index: var(--z-tooltip);
+    text-decoration: none;
 }
-
-.btn-servicios:hover {
+.btn-primary:hover {
     color: #fff;
     background-color: var(--color-primario);
     transition: background-color .5s ease-in-out;
 }
-/* FIN SERVICIOS */
+
+/* INDICADORES ESTADÍSTICOS */
+.estadisticas-section {
+    margin: 2em 0;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.estadistica-item {
+    text-align: center;
+    padding: 1em 0.5em;
+    color: var(--color-parrafos);
+}
+
+.estadistica-numero {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.5em;
+    line-height: 1;
+    margin-bottom: 0.3em;
+    color: var(--color-secundario);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.estadistica-texto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* FIN DE SECCIÓN DE NOSOTROS */
+
+
+/* INICIO DE SECCIÓN DE SERVICIOS */
+
+.servicios-titulo {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-titulos);
+}
+.cards-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+}
+.card-service {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.card-title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--color-titulos);
+}
+/* FIN DE SECCIÓN DE SERVICIOS */
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    /* Sección Nosotros */
+    .main-nosotros {
+        margin-top: 6em;
+        /* padding: 0 2em; */
+    }
+    
+    .nosotros-titulo {
+        font-size: 2.2em;
+    }
+    
+    .nosotros-parrafo {
+        font-size: 1.2em;
+    }
+    
+    .estadisticas-section {
+        /* flex-direction: column; */
+        margin: 1.5em 0;
+        padding: 1.2em;
+    }
+    
+    .estadistica-numero {
+        font-size: 2.2em;
+    }
+    
+    .estadistica-texto {
+        font-size: 0.85em;
+    }
+    
+    /* Sección Servicios */
+    .main-section {
+        margin-top: 6em;
+        padding: 0 2em;
+    }
+    
+    .servicios-titulo {
+        font-size: 2.2em;
+    }
+    
+    .cards-services {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.5em;
+    }
+    
+    .card-title {
+        font-size: 1.3em;
+    }
+}
+
+/* Móviles (481px - 768px) */
+@media screen and (max-width: 768px) {
+    /* Sección Nosotros */
+    .main-nosotros {
+        margin-top: 4em;
+    }
+    
+    .nosotros-titulo {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+    }
+    
+    /* .nosotros-parrafo {
+        font-size: 1.1em;
+        line-height: 1.5;
+    } */
+    
+    .estadisticas-section {
+        flex-direction: column;
+        margin: 1.5em 0;
+        padding: 1em;
+    }
+    
+    .estadistica-numero {
+        font-size: 2em;
+    }
+    
+    .estadistica-texto {
+        font-size: 0.8em;
+    }
+    
+    .btn-primary {
+        width: 100%;
+        text-align: center;
+        padding: 0.9em 2em;
+    }
+    
+    /* Sección Servicios */
+    .main-section {
+        margin-top: 4em;
+        padding: 0 1em;
+    }
+    
+    .servicios-titulo {
+        font-size: 1.8em;
+    }
+    
+    .card-service {
+        text-align: center;
+    }
+    
+    .card-title {
+        font-size: 1.2em;
+        line-height: 1.3;
+    }
+    
+    .main-servicios .btn-banner {
+        width: 100%;
+        max-width: 250px;
+        margin-top: 1.5em;
+    }
+}
+
+/* FIN DE RESPONSIVE DESIGN */
+
 
 /* INICIO CONTACTO */
 .contacto-titulo {
     font-family: 'Montserrat';
     color: var(--color-titulos);
     font-weight: 700;
+    text-align: center;
 }
 
 .contacto {
-    align-self: center;
+    /* align-self: center; */
     padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .contacto h1{
     font-family: 'Montserrat';
     color: var(--color-titulos);
     font-weight: 700;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .contacto h2 {
@@ -355,6 +511,7 @@ textarea {
     font-weight: bold;
     padding: .4em;
     margin-top: .5em;
+    border-radius: .5em;
 }
 
 .boton-contacto:hover {
@@ -363,139 +520,6 @@ textarea {
 }
 
 /* FIN CONTACTO */
-
-
-/* .articulo {
-    margin-bottom: 7em;
-}
-
-.imagen {
-    border-radius: .5em;
-}
-
-.titulo-2 {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 1.5em;
-}
-
-.titulo-1 {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    color: var(--color-primario);
-    font-size: 1.6em;
-    letter-spacing: -1px;
-    margin-top: -.4em;
-    margin-bottom: 1em;
-}
-
-.parrafo {
-    font-family: 'Roboto';
-    color: var(--color-parrafos);
-    text-align: justify;
-    line-height: 1.5em;
-}
-
-.boton {
-    background-color: var(--color-primario);
-    color: #fff;
-    padding: 1em;
-    border-radius: .5em;
-    font-family: 'Roboto';
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.boton:hover {
-    color: #fff;
-    background-color: var(--color-secundario);
-    transition: background-color .5s ease-in-out;
-}
-
-.catalogo-titulo {
-    font-family: 'Roboto';
-    font-weight: 900;
-    text-align: center;
-    color: var(--color-titulos);
-}
-
-INICIO DE CARDS
-.cards-grid {
-    display: grid;
-    gap: 3em;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-}
-
-.card {
-    background-color: #fff;
-    border-radius: .4em;
-    box-shadow: 0 0 3px var(--color-sombras);
-    border: 1px solid var(--color-parrafos);
-}
-
-.card-img-beneficios img {
-    width: 100%;
-    border-radius: .4em;
-}
-
-.card-img img{
-    width: 100%;
-    border-radius: .4em .4em 0 0;
-}
-
-.card-content {
-    padding: 1.5em;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-title {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    text-align: center;
-    font-size: .95em;
-}
-
-.card-boton {
-    font-family: 'Roboto';
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--color-primario);
-    border-radius: .2em;
-    border: 1px solid var(--color-primario);
-    padding: .4em .6em;
-    text-align: center;
-}
-
-.card-boton:hover {
-    background-color: var(--color-primario);
-    color: #fff;
-    transition: background-color .4s ease-in-out;
-}
-FIN DE CARDS
-
-BOTON EXPLORAR
-.contenedor-explorar {
-    text-align: center;
-}
-.btn-explorar {
-    font-family: 'Roboto';
-    font-size: 1.1em;
-    font-weight: 800;
-    text-decoration: none;
-    color: var(--color-primario);
-    border-radius: .2em;
-    border: 1px solid var(--color-primario);
-    padding: 1.1em 2em;
-    text-align: center;
-}
-
-.btn-explorar:hover {
-    background-color: var(--color-primario);
-    color: #fff;
-    transition: background-color .4s ease-in-out;
-} */
-
 
 
 /* INICIO DE FOOTER */
