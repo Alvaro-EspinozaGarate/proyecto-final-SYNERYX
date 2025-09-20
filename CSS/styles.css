@@ -221,8 +221,20 @@ textarea {
 
 /* FIN DE BANNER */
 
+<<<<<<< Updated upstream
 /* INICIO SERVICIOS */
 .servicios-titulo {
+=======
+/* SECCIÓN DE NOSOTROS */
+.main-section {
+    margin: 8em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.nosotros-titulo {
+    color: var(--color-titulos);
+>>>>>>> Stashed changes
     font-family: 'Montserrat';
     color: var(--color-titulos);
     font-weight: 700;
@@ -289,7 +301,186 @@ textarea {
     background-color: var(--color-primario);
     transition: background-color .5s ease-in-out;
 }
+<<<<<<< Updated upstream
 /* FIN SERVICIOS */
+=======
+
+/* INDICADORES ESTADÍSTICOS */
+.estadisticas-section {
+    margin: 2em 0;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.estadistica-item {
+    text-align: center;
+    padding: 1em 0.5em;
+    color: var(--color-parrafos);
+}
+
+.estadistica-numero {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.5em;
+    line-height: 1;
+    margin-bottom: 0.3em;
+    color: var(--color-secundario);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.estadistica-texto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* FIN DE SECCIÓN DE NOSOTROS */
+
+
+/* INICIO DE SECCIÓN DE SERVICIOS */
+
+.servicios-titulo {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-titulos);
+}
+.cards-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+}
+.card-service {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.card-title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--color-titulos);
+}
+/* FIN DE SECCIÓN DE SERVICIOS */
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    /* Sección Nosotros */
+    .main-nosotros {
+        margin-top: 6em;
+        /* padding: 0 2em; */
+    }
+    
+    .nosotros-titulo {
+        font-size: 2.2em;
+    }
+    
+    .nosotros-parrafo {
+        font-size: 1.2em;
+    }
+    
+    .estadisticas-section {
+        /* flex-direction: column; */
+        margin: 1.5em 0;
+        padding: 1.2em;
+    }
+    
+    .estadistica-numero {
+        font-size: 2.2em;
+    }
+    
+    .estadistica-texto {
+        font-size: 0.85em;
+    }
+    
+    /* Sección Servicios */
+    .main-section {
+        margin-top: 6em;
+        padding: 0 2em;
+    }
+    
+    .servicios-titulo {
+        font-size: 2.2em;
+    }
+    
+    .cards-services {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.5em;
+    }
+    
+    .card-title {
+        font-size: 1.3em;
+    }
+}
+
+/* Móviles (481px - 768px) */
+@media screen and (max-width: 768px) {
+    .nosotros-titulo {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+    }
+    
+    /* .nosotros-parrafo {
+        font-size: 1.1em;
+        line-height: 1.5;
+    } */
+    
+    .estadisticas-section {
+        flex-direction: column;
+        margin: 1.5em 0;
+        padding: 1em;
+    }
+    
+    .estadistica-numero {
+        font-size: 2em;
+    }
+    
+    .estadistica-texto {
+        font-size: 0.8em;
+    }
+    
+    .btn-primary {
+        width: 100%;
+        text-align: center;
+        padding: 0.9em 2em;
+    }
+    
+    /* Sección Servicios */
+    .main-section {
+        margin-top: 4em;
+        padding: 0 1em;
+    }
+    
+    .servicios-titulo {
+        font-size: 1.8em;
+    }
+    
+    .card-service {
+        text-align: center;
+    }
+    
+    .card-title {
+        font-size: 1.2em;
+        line-height: 1.3;
+    }
+    
+    .main-servicios .btn-banner {
+        width: 100%;
+        max-width: 250px;
+        margin-top: 1.5em;
+    }
+}
+
+/* FIN DE RESPONSIVE DESIGN */
+
+>>>>>>> Stashed changes
 
 /* INICIO CONTACTO */
 .contacto-titulo {
