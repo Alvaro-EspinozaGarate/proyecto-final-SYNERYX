@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- HOJA DE ESTILOS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/servicios.css">
     
     <script src="js/jquery.js"></script>
 
@@ -43,7 +43,7 @@
                 <a href="index.html">INICIO</a>
                 <a href="#">CONÓCENOS</a>
                 <a href="servicios.html">SERVICIOS</a>
-                <a href="#contacto">CONTACTO</a>
+                <a href="#">CONTACTO</a>
                 <a href="#">PROYECTOS</a>
             </div>
         </nav>
@@ -62,53 +62,71 @@
         </section>
     </section>
     <br><br><br><br>
-    <!-- FIN DE MENÚ DE NAVEGACIÓN -->
 
-    <!-- INICIO DE NOSOTROS -->
-    <!-- FIN DE NOSOTROS -->
-
-    <!-- INICIO DE SERVICIOS -->
-     <article class="container" id="servicios">
+    
+    <!-- CONTENIDO -->
+    <article class="container" id="servicios">
         <h1 class="servicios-titulo">SERVICIOS</h1>
-        <section class="servicios">
-            <img src="img/fondo-servicios.png" alt="" class="servicios-img">            
-            <h1>Nuestros Servicios</h1>
-            <h2>Conoce cómo impulsamos tu negocio con tecnología: desarrollo web, ERP, automatización y más.</h2>
-            <div class="contenedor-conoce">
-                <a href="servicios.html" class="btn-servicios">Conoce aquí</a>
-            </div>
+        <section class="row">
+            <section class="col-xs-12 col-sm-6 col-md-6 servicios">
+                <img src="img/servicios-1.png" alt="">
+            </section>
+            <section class="col-xs-12 col-sm-6 col-md-6 servicios">
+                <h1>Desarrollo Web & Mobile</h1>
+                <h2>Diseñamos y desarrollamos sitios web y aplicaciones móviles que impulsan el crecimiento digital de tu negocio.</h2> 
+                <div class="contenedor-informacion">
+                    <a href="index.html#contacto" class="btn-servicios">Más información</a>
+                </div>
+            </section>
         </section>
     </article>
-    <!-- FIN DE SERVICIOS -->
 
-    <!-- INICIO DE CONTACTO -->
-    <article class="container" id="contacto">
-        <h1 class="contacto-titulo">CONTACTO</h1>
-        <form action="enviar.js" method="get">
-            <section class="row">
-                <section class="col-xs-12 col-sm-6 col-md-6 contacto">
-                    <h1>Conéctate con SINERYX</h1>
-                    <h2>Nuestro equipo está listo para ayudarte a llevar tu tecnología al siguiente nivel.</h2>
-                    <section class="contacto-flex">
-                        <a href="mailto:correoempresa@sineryx.pe" target="_blank"><i class="fa-solid fa-envelope"></i> correoempresa@sineryx.pe</a>
-                        <a href="tel:+51123456789" target="_blank"><i class="fa-solid fa-phone"></i> +51 123-456-789</a>
-                    </section>
-                </section>
-
-                <section class="col-xs-12 col-sm-6 col-md-6 contacto">
-                    <input class="contacto-input" type="text" placeholder="Ingrese su nombre" required>
-                    <input class="contacto-input" type="email" placeholder="Ingrese su correo electrónico" required>
-                    <textarea placeholder="Ingrese su mensaje" required></textarea>
-                    <label><input type="checkbox"> Acepto los términos y condiciones</label>
-                    <input class="contacto-input boton-contacto" type="submit" value="Enviar">
-                </section>
+    <article class="container" id="servicios">
+        <section class="row izquierda">
+            <section class="col-xs-12 col-sm-6 col-md-6 servicios">
+                <h1>Consultoría y Gestión de Proyectos</h1>
+                <h2>Integramos soluciones ERP que centralizan tus operaciones, mejorando la toma de descisiones y la eficiencia.</h2> 
+                <div class="contenedor-informacion">
+                    <a href="index.html#contacto" class="btn-servicios">Más información</a>
+                </div>
             </section>
-        </form>
+            <section class="col-xs-12 col-sm-6 col-md-6 servicios">
+                <img src="img/servicios-2.png" alt="">
+            </section>
+        </section>
     </article>
-    <!-- FIN DE CONTACTO -->    
 
-    <!-- INICIO DE PROYECTOS -->
-    <!-- FIN DE PROYECTOS -->
+    <article class="container" id="servicios">
+        <section class="row">
+            <section class="col-xs-12 col-sm-6 col-md-6 servicios">
+                <img src="img/servicios-3.png" alt="">
+            </section>
+            <section class="col-xs-12 col-sm-6 col-md-6 servicios">
+                <h1>Implementación de ERP</h1>
+                <h2>Te acompañaremos en la planificación y ejecución de proyectos, asegurando resultados concretos y escalables.</h2> 
+                <div class="contenedor-informacion">
+                    <a href="index.html#contacto" class="btn-servicios">Más información</a>
+                </div>
+            </section>
+        </section>
+    </article>
+
+    <article class="container" id="servicios">
+        <section class="row izquierda">
+            <section class="col-xs-12 col-sm-6 col-md-6 servicios">
+                <h1>Automatización de Proyectos</h1>
+                <h2>Optimiza tus flujos de trabajo y libera a tu equipo de tareas repetitivas para enfocarse en la innovación.</h2> 
+                <div class="contenedor-informacion">
+                    <a href="index.html#contacto" class="btn-servicios">Más información</a>
+                </div>
+            </section>
+            <section class="col-xs-12 col-sm-6 col-md-6 servicios">
+                <img src="img/servicios-4.png" alt="">
+            </section>
+        </section>
+    </article>
+    <!-- FIN CONTENIDO -->
+
 
     <!-- INICIO DE FOOTER -->
     <footer class="main-footer">
