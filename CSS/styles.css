@@ -448,18 +448,22 @@ textarea {
     font-family: 'Montserrat';
     color: var(--color-titulos);
     font-weight: 700;
+    text-align: center;
 }
 
 .contacto {
-    align-self: center;
+    /* align-self: center; */
     padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .contacto h1{
     font-family: 'Montserrat';
     color: var(--color-titulos);
     font-weight: 700;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .contacto h2 {
@@ -507,6 +511,7 @@ textarea {
     font-weight: bold;
     padding: .4em;
     margin-top: .5em;
+    border-radius: .5em;
 }
 
 .boton-contacto:hover {
